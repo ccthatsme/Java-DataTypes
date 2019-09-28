@@ -44,11 +44,12 @@ public class DataTypes {
 		                    System.out.println("* int");
 		                    System.out.println("* long");
 		                }
-//		                else if(list.get(c)>=-9223372036854775808 && list.get(c)<=9223372036854775807) {
-//		                    -9,223,372,036,854,775,808
-//		            
-//		                    System.out.println("* long");
-//		                }
+		                //for some reason this does not work
+		                else if(list.get(c)>=-(Math.pow(2, 63)) && list.get(c)<=(Math.pow(2, 63))-1) {
+		                    
+		            
+		                    System.out.println("* long");
+		                }
 		                else{
 		                    System.out.println(list.get(c) + "can't be fitted anywhere");
 		                }
